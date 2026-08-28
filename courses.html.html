@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หลักสูตรการสอน - วิทยาลัยเทคโนโลยีบ้านจั่น</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap');
+        body { font-family: 'Sarabun', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <header class="bg-red-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="โลโก้วิทยาลัยเทคโนโลยีบ้านจั่น" class="w-14 h-14 object-contain bg-white rounded-full p-1 border-2 border-amber-300 shadow">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-amber-300">วิทยาลัยเทคโนโลยีบ้านจั่น</h1>
+                </div>
+            </a>
+            <nav class="hidden md:flex space-x-6 text-lg font-semibold">
+                <a href="index.html" class="hover:text-amber-300 py-1">หน้าหลัก</a>
+                <a href="member.html" class="hover:text-amber-300 py-1">เกณฑ์การรับสมัคร</a>
+                <a href="leader.html" class="hover:text-amber-300 py-1">เกี่ยวกับวิทยาลัย</a>
+                <a href="courses.html" class="text-amber-300 py-1 border-b-2 border-amber-300">หลักสูตรการสอน</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-10 flex-grow w-full space-y-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800">หลักสูตรการเรียนการสอน</h2>
+
+        <!-- ระดับ ปวช. -->
+        <section class="bg-white rounded-2xl shadow-md p-6 md:p-8 border-t-8 border-red-700 space-y-6">
+            <div class="bg-red-700 text-white p-4 rounded-xl text-xl font-bold flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-award text-amber-300 text-2xl mr-3"></i>
+                    ระดับประกาศนียบัตรวิชาชีพ (ปวช.)
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- พาณิชยกรรม -->
+                <div class="bg-red-50/50 rounded-xl p-5 border border-red-100">
+                    <h3 class="text-xl font-bold text-red-800 mb-3 flex items-center">
+                        <i class="fa-solid fa-briefcase text-red-700 mr-2"></i> ประเภทวิชาพาณิชยกรรม
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">แบ่งออกเป็น 3 สาขาวิชา:</p>
+                    <ul class="space-y-2 text-lg text-gray-700">
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">1. สาขาวิชาการบัญชี</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">2. สาขาวิชาเทคโนโลยีสารสนเทศ</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">3. สาขาวิชาการตลาด</li>
+                    </ul>
+                </div>
+
+                <!-- ช่างอุตสาหกรรม -->
+                <div class="bg-amber-50/50 rounded-xl p-5 border border-amber-200">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3 flex items-center">
+                        <i class="fa-solid fa-wrench text-amber-700 mr-2"></i> ประเภทวิชาช่างอุตสาหกรรม
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">แบ่งออกเป็น 3 สาขาวิชา:</p>
+                    <ul class="space-y-2 text-lg text-gray-700">
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">1. สาขาช่างยนต์</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">2. สาขาช่างไฟฟ้า</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">3. สาขาช่างอิเล็กทรอนิกส์</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ระดับ ปวส. -->
+        <section class="bg-white rounded-2xl shadow-md p-6 md:p-8 border-t-8 border-amber-400 space-y-6">
+            <div class="bg-amber-500 text-red-950 p-4 rounded-xl text-xl font-bold flex items-center">
+                <i class="fa-solid fa-user-graduate text-2xl mr-3"></i>
+                ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- บริหารธุรกิจ -->
+                <div class="bg-amber-50/50 rounded-xl p-5 border border-amber-200">
+                    <h3 class="text-xl font-bold text-amber-900 mb-3 flex items-center">
+                        <i class="fa-solid fa-chart-line text-amber-700 mr-2"></i> ประเภทวิชาบริหารธุรกิจ
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">แบ่งออกเป็น 4 สาขาวิชา:</p>
+                    <ul class="space-y-2 text-lg text-gray-700">
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">1. สาขาวิชาการบัญชี</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">2. สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">3. สาขาวิชาการตลาด</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-red-700">4. สาขาธุรกิจค้าปลีก</li>
+                    </ul>
+                </div>
+
+                <!-- ช่างอุตสาหกรรม -->
+                <div class="bg-red-50/50 rounded-xl p-5 border border-red-100">
+                    <h3 class="text-xl font-bold text-red-800 mb-3 flex items-center">
+                        <i class="fa-solid fa-gears text-red-700 mr-2"></i> ประเภทวิชาช่างอุตสาหกรรม
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-3">แบ่งออกเป็น 3 สาขาวิชา:</p>
+                    <ul class="space-y-2 text-lg text-gray-700">
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">1. สาขาช่างยนต์</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">2. สาขาช่างไฟฟ้า</li>
+                        <li class="p-2.5 bg-white rounded-lg shadow-sm border-l-4 border-amber-400">3. สาขาช่างอิเล็กทรอนิกส์</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white text-center py-4 text-sm mt-auto">
+        &copy; วิทยาลัยเทคโนโลยีบ้านจั่น อุดรธานี
+    </footer>
+</body>
+</html>
